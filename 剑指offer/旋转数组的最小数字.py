@@ -2,10 +2,11 @@
 # @Author: WuLC
 # @Date:   2017-04-22 10:36:53
 # @Last modified by:   WuLC
-# @Last Modified time: 2017-04-22 11:05:58
+# @Last Modified time: 2017-04-22 11:06:32
 # @Email: liangchaowu5@gmail.com
 
 # 二分查找，注意数组是非递减数组，也就是可能含有重复元素
+
 class Solution:
     def minNumberInRotateArray(self, rotateArray):
         result = 0
