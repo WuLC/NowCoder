@@ -2,7 +2,7 @@
 # @Author: WuLC
 # @Date:   2017-04-23 15:47:37
 # @Last modified by:   WuLC
-# @Last Modified time: 2017-04-23 15:49:35
+# @Last Modified time: 2017-04-23 15:59:33
 # @Email: liangchaowu5@gmail.com
 
 
@@ -15,7 +15,3 @@ class Solution:
         for _ in xrange(n-1):
             a, b = b, a+b
         return b 
-
-
-
-# 时间复杂度O(logn)
