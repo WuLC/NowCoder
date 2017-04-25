@@ -2,8 +2,13 @@
 # @Author: LC
 # @Date:   2017-04-25 18:55:50
 # @Last modified by:   WuLC
-# @Last Modified time: 2017-04-25 18:56:06
+# @Last Modified time: 2017-04-25 19:52:43
 # @Email: liangchaowu5@gmail.com
+
+
+"""
+给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。
+"""
 
 # similar to binary search
 class Solution:
