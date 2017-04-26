@@ -2,7 +2,7 @@
 # @Author: WuLC
 # @Date:   2017-04-26 19:50:12
 # @Last modified by:   WuLC
-# @Last Modified time: 2017-04-26 19:51:07
+# @Last Modified time: 2017-04-26 19:52:01
 # @Email: liangchaowu5@gmail.com
 
 
@@ -18,7 +18,7 @@
 #         self.val = x
 #         self.next = None
 
-# 设虚拟头结点
+# 设虚拟头结点 dummy
 class Solution:
     # 返回合并后列表
     def Merge(self, pHead1, pHead2):
