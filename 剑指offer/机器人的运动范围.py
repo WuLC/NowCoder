@@ -20,7 +20,7 @@ class Solution:
             count += 1
             for d in direct:
                 r, c = curr[0]+d[0], curr[1]+d[1]
-                if 0 <= r < rows and 0 <= c < cols and visited[r][c]==0 and sum([int(c) for c in str(r)+str(c)]) <= threshold:
+                if 0 <= r < rows and 0 <= c < cols and visited[r][c]==0 and sum([int(ch) for ch in str(r)+str(c)]) <= threshold:
                     visited[r][c] = 1
                     queue.append((r, c))
         return count
