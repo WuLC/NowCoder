@@ -7,17 +7,15 @@
 from collections import deque, defaultdict
 class Solution:
     def __init__(self):
-        self.count = defaultdict()
-        self.chars = deque()
+        self.queue = deque()
+        self.count = defaultdict(int)
         
     def FirstAppearingOnce(self):
-        while len(self.chars) > 0 and self.count[self.chars[0]] > 1:
-            self.chars.popleft()
-        return self.chars[0] if len(self.chars) > 0 else '#'
+        while self.queue and self.count[self.queue[0]] > 1:
+            self.queue.popleft()
+        return self.queue[0] if self.queue else '#'
         
     def Insert(self, char):
-        if char not in self.count:
-            self.chars.append(char)
-            self.count[char] += 1
-        else:
-            self.count[char] += 1
+        self.count[char] += 1
+        if self.count[char] == 1:
+            self.queue.append(char)
